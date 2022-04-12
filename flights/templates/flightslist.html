@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Flight List</title>
+    </head>
+    <body>
+        <h1>Flights List</h1>
+        {% for obj in flightslist %}
+            <ul>
+                <li>{{ obj.id }}</li>
+                <li>{{ obj.destination }}</li>
+                <li>{{ obj.time }}</li>
+                <li>{{ obj.price }}</li>
+            </ul>
+        {% endfor %}
+    </body>
+</html>
